@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    schema: raw  
+    tables:
+      - name: raw_orders
+        freshness: # default freshness
+           warn_after: {count: 12, period: day}
+           error_after: {count: 24, period: day}
+        loaded_at_field: order_date
+      - name: raw_customers
+
+ 

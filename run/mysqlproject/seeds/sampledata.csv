@@ -1,0 +1,10 @@
+
+    
+    create table `dbt_dev`.`sampledata` (`employee_id` integer,`email` text,`customer_id` integer)
+  ;
+    -- dbt seed --
+    
+          insert into `dbt_dev`.`sampledata` (`employee_id`, `email`, `customer_id`) values
+          (%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s)
+      
+  

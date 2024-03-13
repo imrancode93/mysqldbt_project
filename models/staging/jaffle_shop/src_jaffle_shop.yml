@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name: jaffle_shop
+    description: "this from jaffle_shop"
     schema: raw  
     tables:
       - name: raw_orders
